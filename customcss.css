@@ -1,271 +1,99 @@
-/*
-Notice of Copyright & License
-
-You may view the license here.
-
-https://gist.github.com/satoru8/661377e6c073d2601ed4478c49399fc9
-
-This notice applies to all files within this repository even where not stated within the files.
-Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
+/** 
+ * @name aUSER
+ * @author NFLD99
+ * @version ersion auto updates
+ * @description Support Server: https://nfld99.com/discord
+ * @source https://github.com/NFLD99/Better-Discord
+ * @website https://nfld99.com/
 */
-@import url('https://satoru8.github.io/FullTransparency/FullTransparency.css');
-
-:root{
-    --hover-color: #e649be;
-    --hover-color-bright: #b88fcf;
-    --main-color: #6fd1d8;
-    --main-color-bright: #00eeff;
-    --link-color: #72e7a7;
-    --hover-color-bg: #ff008023;
-    --main-color-bg: #b6389609;
-    --link-color-bg: #72e7a717;
-    --selection: #0099ff;
-    --bgLayer: rgba(0, 0, 0, 0.6);
-    --homeIcon: url('https://i.imgur.com/yA3h4mo.png');
-    --unread: var(--link-color);
-    --round: 25%;
+/* Source Code */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Master_Code.css);
+/* Animations */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Animations/Yes.css);
+/* Fonts https://nfld99.github.io/Better-Discord/Font_List.txt */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/Yes.css);
+/* Settings Dock */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Popup/Yes.css);
+/* Channels */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Channels/No.css);
+/* Chat Title Bar */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Chat_Title_Bar/No.css);
+/* Guild List */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Guilds/No.css);
+/* Invites */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Invites/Yes.css);
+/* Member List */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Members/Yes.css);
+/* Windows Bar */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Windows_Bar/Yes.css);
+/* Offline Members */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Offline/Yes.css);
+/* User Popout Footer */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Popout_Footer/Yes.css);
+/* Transparency Patch */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Transparency/Yes.css);
+:root {
+  --Main-Colour: rgba(99,228,112, 1);
+  --Background-Colour: rgba(253,0,0, 1);
+  --Secondary-Background-Colour: rgba(253,0,0, .3);
+  --Secondary-Main-Colour: rgba(99,228,112, 0.5);
+  --Text-Shadow-Colour: rgba(253,0,0, .45);
+  --Scroller-Colour: rgba(99,228,112, 0);
+  --Notification-Colour: rgba(99,228,112, 1);
+  --Chat-Input-Background: rgba(253,0,0, 0);
+  --Chat-Input-Colour: var(--Main-Colour);
+  --Unread-Message-1: var(--Main-Colour);
+  --Unread-Message-2: var(--Background-Colour);
+  --Chat-Background: rgb(255, 255, 255,0);
+  --Settings-Background: Transparent;
+  --Callout-Background: url(https://i.imgur.com/VBHq52j.png);
+  --Title-Background: url(https://i.imgur.com/VBHq52j.png);
+  --Theme-Variant: "aUSER ";
+  --Chat-Font-Used: "Comic Sans MS" ;
+  --Chat-Font-Size: 15px;
+  --Unread-Message-Speed: 1.5s;
+  --Popout-Main-Colour: var(--Main-Colour);
+  --Popout-Background: var(--Callout-Background);
+  --Popout-Text-Shadow-Colour: var(--Text-Shadow-Colour);
+  --Emote-Popout-Background: var(--Secondary-Background-Colour);
+  --load1: "Thank You!";
+  --load2: "Please Enjoy!";
+  --load3: "➢NFLD99";
+  --File-Updated-2019-6-19: ;
+  --Settings-Dock-Colour: var(--Main-Colour);
+  --Timestamp-Colour: var(--Main-Colour);
+  --Background-Darkness: 0.5;
+  --Guild-Columns: 2;
+  --ServerFolders-Guild-Columns: var(--Guild-Columns); /* Set # of guild rows in Server Folders */
+  --Chat-Avatar-Border-Radius: 10%;
+}
+.messageCozy-2JPAPA .username-_4ZSMR {
+  position: relative;
+  padding:2px 6px 3px 6px;
 }
 
-#app-mount{
-    background-image:  url('https://cdn.discordapp.com/attachments/456316408465195009/572102568524775431/bgy195mgw6s21.jpg') !important;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.messageCozy-2JPAPA .username-_4ZSMR::after {
+  content: "";
+  background: currentColor;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  opacity:0.3;
+  border-radius:5px;
+  z-index:-1;
+  filter: invert(1);
 }
 
-strong{
-    font-family: sans-serif !important;
-    font-weight: 900;
+*:nth-child(even){
+  transform: rotate(1deg);
+  filter: hue-rotate(180deg);
+  animation: CLog 10s infinite linear;
 }
 
-.anchor-3Z-8Bb{
-    color: var(--link-color) !important;
-    transition: all 1s ease-in-out .5s !important;
-}
-
-.anchor-3Z-8Bb:hover{
-    text-decoration: none !important;
-    font-weight: 900;
-}
-
-u{
-    text-decoration: none;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(90deg, transparent, var(--main-color), transparent);
-    border-image-slice: 1;
-}
-
-.username-_4ZSMR{
-    background-clip: text;
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;	
-    background-image: linear-gradient(to bottom, var(--main-color-bright), var(--hover-color-bright));
-	background-size: fill;
-    background-repeat: no-repeat;
-	background-attachment: unset;
-	background-position: 0%;    margin-top: -2px !important;
-    margin-bottom: -2px !important;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: none;
-}
-
-.markup-2BOw-j, .wrapper-3WhCwL, .isMentioned-N-h9aa{
-    color: var(--main-color) !important;
-    margin-top: -1px !important;
-    margin-bottom: -1px !important;
-    transition: all 1s ease-in-out .3s !important;
-}  
-
-.markup-2BOw-j:hover:not(.jumboable), .isMentioned-N-h9aa:hover, .wrapper-3WhCwL:hover{
-    color: var(--hover-color) !important;
-    font-size: 17.5px !important;
-    margin-top: -.5px !important;
-    margin-bottom: -.5px !important;
-}
-
-::selection{
-    color: var(--selection) !important;
-    background-color: transparent !important;
-}
-
-.userPopout-3XzG_A{display:grid;width:500px}
-.header-2BwW8b{grid-area:1/1;display:grid}
-.activity-11LB_k{grid-area:1/2}
-.body-3iLsc4{grid-area:2/1}
-.footer-1fjuF6{grid-area:3/1}
-
-#app-mount .wrapper-3WhCwL{
-    background-color: var(--link-color-bg) !important;
-    border: 1px solid var(--link-color) !important;
-    border-bottom-color: var(--link-color) !important;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-width: 2.5px;
-    color: var(--link-color);
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 1px;
-    margin-top: 3px;
-    margin-bottom: 3px !important;
-}
-
-#app-mount .isMentioned-N-h9aa{
-    border-image: linear-gradient(to right, rgba(255,0,0,1), rgba(255,127,0,1) , rgba(255,255,0,1), rgba(127,255,0,1), rgba(0,255,0,1), rgba(0,255,127,1), rgba(0,255,255,1), rgba(0,127,255,1), rgba(0,0,255,1), rgba(127,0,255,1), rgba(255,0,255,1), rgba(255,0,127,1)) !important;
-}
-
-#app-mount .wrapper-3WhCwL, #app-mount .isMentioned-N-h9aa{
-    text-shadow: 0 0 4px black !important;
-    background: transparent !important;
-    color: #fff !important;
-    color: var(--link-color) !important;
-}
-
-#app-mount .isMentioned-N-h9aa::after{
-    display: none;
-}
-
-#app-mount .wrapper-3WhCwL:hover{
-    background-color: var(--hover-color-bg) !important;
-    border: 1px solid var(--hover-color) !important;
-    border-bottom-color: var(--hover-color) !important;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-width: 2.5px;
-    color: var(--hover-color) !important;
-    padding-right: 10px !important;
-    padding-left: 10px !important;
-    padding-bottom: 3px !important;
-}
-
-#app-mount .wrapper-3WhCwL:hover::after,
-#app-mount .wrapper-3WhCwL:hover {background:var(--hover-color-bg) !important;}
-
-.mention{
-    text-decoration: none;
-    display:inline-block;
-}
-
-#app-mount .wrapper-3WhCwL, 
-#app-mount .isMentioned-N-h9aa,
-#app-mount .wrapper-3WhCwL:hover, 
-#app-mount .isMentioned-N-h9aa:hover{
-    text-decoration: none !important;
-}
-
-.username-_4ZSMR:hover{
-    text-decoration: none;
-    font-weight: 900 !important;
-    background-image: linear-gradient(to right, rgba(255,0,0,1), rgba(255,127,0,1) , rgba(255,255,0,1), rgba(127,255,0,1), rgba(0,255,0,1), rgba(0,255,127,1), rgba(0,255,255,1), rgba(0,127,255,1), rgba(0,0,255,1), rgba(127,0,255,1), rgba(255,0,255,1), rgba(255,0,127,1),rgba(255,0,0,1), rgba(255,127,0,1) , rgba(255,255,0,1), rgba(127,255,0,1), rgba(0,255,0,1), rgba(0,255,127,1), rgba(0,255,255,1), rgba(0,127,255,1), rgba(0,0,255,1), rgba(127,0,255,1), rgba(255,0,255,1), rgba(255,0,127,1),rgba(255,0,0,1), rgba(255,127,0,1) , rgba(255,255,0,1), rgba(127,255,0,1), rgba(0,255,0,1), rgba(0,255,127,1), rgba(0,255,255,1), rgba(0,127,255,1), rgba(0,0,255,1), rgba(127,0,255,1), rgba(255,0,255,1), rgba(255,0,127,1)) !important;
-    background-size: 1000%;
-    animation: slide 8s infinite ease-in-out;
-}
-
-@keyframes gay {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes slide {
-	0% {
-		background-position: 0%;	
-	}
-	50% {
-		background-position: 100%;	
-	}
-	100% {
-		background-position: 0%;
-	}
-}
-
-.channel-2QD9_O a{
-    background: none !important;
-    border: 0 !important;
-    box-sizing: border-box !important;
-    color: var(--main-color) !important;
-    font-size: inherit !important;
-    font-weight: 700 !important;
-    position: relative !important;
-    vertical-align: middle !important;
-}
-
-.channel-2QD9_O a{
-    background-color: var(--main-color-bg) !important;
-}
-.channel-2QD9_O a:hover{
-    background-color: var(--hover-color-bg) !important;
-}
-
-.channel-2QD9_O a:hover {
-    color: var(--hover-color) !important;
-}
-
-.channel-2QD9_O a::before, .channel-2QD9_O a::after {
-    top: 0 !important;
-    left: 0 !important;
-    height: 100% !important;
-    width: 100% !important;
-    transform-origin: center !important;
-    box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.channel-2QD9_O a::before {
-    border-bottom: 1px solid var(--hover-color) !important;
-    border-top: 1px solid var(--hover-color) !important;
-    transform: scale3d(0, 1, 1) !important;
-}
-
-.channel-2QD9_O a::after {
-    border-left: 1px solid var(--hover-color) !important;
-    border-right: 1px solid var(--hover-color) !important;
-    transform: scale3d(1, 0, 1) !important;
-}
-
-.channel-2QD9_O a:hover::before, .channel-2QD9_O a:hover::after {
-    transform: scale3d(1, 1, 1) !important;
-    transition: transform 0.5s !important;
-}
-
-[style*="/avatars/498615931388559362/"]{
-  background: url(https://i.imgur.com/zGRaYk2.png) 50% 50%/cover !important;
-}
-
-.icon-27yU2q[src="https://cdn.discordapp.com/avatars/498615931388559362/38471472ef26d2a2dabf94a831172d4a.webp?size=256"]{
-    -webkit-mask: url("https://cdn.discordapp.com/avatars/580486830827372562/40b44676c04c450f6c480a0ec25c9c92.webp?size=256") !important;
-}
-
-.jumboable:hover, .image-33JSyf:hover, .maskProfile-1ObLFT, .statusProfile-3ynqtt{
-    animation: floating 3s infinite ease-in-out !important;
-}
-
-@keyframes floating {
-	0% {
-		transform: translatey(0px)
-	}
-	50% {
-		transform: translatey(-5px)
-	}
-	100% {
-		transform: translatey(0px)
-	}
-}
-
-.emojiPicker-3m1S-j, .category-2U57w6{
-    background-color: #000000;
-    color: #ffffff;
-}
- 
-#app-mount ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to bottom, var(--main-color-bright), var(--hover-color-bright));
-}
-
-*{
-    text-shadow: none !important;
+*:nth-child(odd){
+  transform: rotate(-1deg);
+  filter: hue-rotate(-180deg);
+  animation: CLog 10s infinite linear;
 }
