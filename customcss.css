@@ -266,6 +266,6 @@ u{
     background-image: linear-gradient(to bottom, var(--main-color-bright), var(--hover-color-bright));
 }
 
-*{
+#app-mount{
     text-shadow: none !important;
 }
