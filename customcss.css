@@ -314,10 +314,6 @@ u {
   transition: transform 0.5s, -webkit-transform 0.5s !important;
 }
 
-[style*="/avatars/498615931388559362/"] {
-  background: url(https://i.imgur.com/zGRaYk2.png) 50% 50%/cover !important;
-}
-
 [style*="/avatars/311966851179479046/"] {
   background: url(https://cdn.discordapp.com/attachments/339760259738370049/557192623756935169/image0.jpg) 50% 50%/cover !important;
 }
