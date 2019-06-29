@@ -24,6 +24,7 @@ Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
   --homeIcon: url('https://i.imgur.com/yA3h4mo.png');
   --unread: var(--link-color);
   --round: 25%;
+  --font: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif ;	/* Discord default font - Whitney,Helvetica Neue,Helvetica,Arial,sans-serif */
 }
 
 #app-mount {
