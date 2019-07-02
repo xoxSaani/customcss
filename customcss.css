@@ -179,10 +179,8 @@ u {
 }
 
 #app-mount .isMentioned-N-h9aa .wrapper-3WhCwL {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.1)), color-stop(rgba(255, 127, 0, 0.1)), color-stop(rgba(255, 255, 0, 0.1)), color-stop(rgba(127, 255, 0, 0.1)), color-stop(rgba(0, 255, 0, 0.1)), color-stop(rgba(0, 255, 127, 0.1)), color-stop(rgba(0, 255, 255, 0.1)), color-stop(rgba(0, 127, 255, 0.1)), color-stop(rgba(0, 0, 255, 0.1)), color-stop(rgba(127, 0, 255, 0.1)), color-stop(rgba(255, 0, 255, 0.1)), to(rgba(255, 0, 127, 0.1))) !important;
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(255, 127, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(127, 255, 0, 0.1), rgba(0, 255, 0, 0.1), rgba(0, 255, 127, 0.1), rgba(0, 255, 255, 0.1), rgba(0, 127, 255, 0.1), rgba(0, 0, 255, 0.1), rgba(127, 0, 255, 0.1), rgba(255, 0, 255, 0.1), rgba(255, 0, 127, 0.1)) !important;
   background-size: cover !important;
-  -webkit-transition: all 1s ease-in-out .3s !important;
   transition: all 1s ease-in-out .3s !important;
   border: none !important;
 }
@@ -192,6 +190,7 @@ u {
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 127, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(127, 255, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 255, 127, 0.5), rgba(0, 255, 255, 0.5), rgba(0, 127, 255, 0.5), rgba(0, 0, 255, 0.5), rgba(127, 0, 255, 0.5), rgba(255, 0, 255, 0.5), rgba(255, 0, 127, 0.5)) !important;
   background-size: cover !important;
   border: none !important;
+  animation: isMentioned 2s infinite linear !important;
 }
 
 #app-mount .wrapper-3WhCwL, #app-mount .mention {
