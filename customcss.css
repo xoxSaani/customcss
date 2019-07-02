@@ -26,6 +26,7 @@ Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
   --round: 25%;
   --speakColor: #b88fcf;
   --sc: #e649be;
+  --font: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif ;	/* Discord default font - Whitney,Helvetica Neue,Helvetica,Arial,sans-serif */
 }
 
 #app-mount {
