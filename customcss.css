@@ -24,7 +24,8 @@ Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
   --homeIcon: url('https://i.imgur.com/yA3h4mo.png');
   --unread: var(--link-color);
   --round: 25%;
-  --font: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif ;	/* Discord default font - Whitney,Helvetica Neue,Helvetica,Arial,sans-serif */
+  --speakColor: #b88fcf;
+  --sc: #e649be;
 }
 
 #app-mount {
@@ -59,20 +60,50 @@ u {
   border-image-slice: 1;
 }
 
-.username-_4ZSMR {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-color-bright)), to(var(--hover-color-bright)));
-  background-image: linear-gradient(to bottom, var(--main-color-bright), var(--hover-color-bright));
-  background-size: fill;
-  background-repeat: no-repeat;
-  background-attachment: unset;
-  background-position: 0%;
-  margin-top: -2px !important;
-  margin-bottom: -2px !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: none;
+.messageCozy-2JPAPA .username-_4ZSMR {
+  position: relative;
+  padding: 2px 6px 3px 6px;
+}
+
+.messageCozy-2JPAPA .username-_4ZSMR::after {
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(currentColor), to(transparent)) !important;
+  background-image: linear-gradient(to right, transparent, currentColor, transparent) !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: isMentioned 2s infinite linear !important;
+          animation: isMentioned 2s infinite linear !important;
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 5px;
+  z-index: -1;
+  background-size: 200% 200%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.theme-dark .username-_4ZSMR {
+  color: #d2af35;
+}
+
+@-webkit-keyframes isMentioned {
+  0% {
+    background-position: 250% 250%;
+  }
+  100% {
+    background-position: -150% -150%;
+  }
+}
+
+@keyframes isMentioned {
+  0% {
+    background-position: 250% 250%;
+  }
+  100% {
+    background-position: -150% -150%;
+  }
 }
 
 .markup-2BOw-j, .wrapper-3WhCwL, .isMentioned-N-h9aa, .mention {
@@ -206,16 +237,6 @@ u {
   text-decoration: none !important;
 }
 
-.username-_4ZSMR:hover {
-  text-decoration: none;
-  font-weight: 900 !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(#ff7f00), color-stop(yellow), color-stop(chartreuse), color-stop(lime), color-stop(springgreen), color-stop(cyan), color-stop(#007fff), color-stop(blue), color-stop(#7f00ff), color-stop(magenta), color-stop(#ff007f), color-stop(red), color-stop(#ff7f00), color-stop(yellow), color-stop(chartreuse), color-stop(lime), color-stop(springgreen), color-stop(cyan), color-stop(#007fff), color-stop(blue), color-stop(#7f00ff), color-stop(magenta), color-stop(#ff007f), color-stop(red), color-stop(#ff7f00), color-stop(yellow), color-stop(chartreuse), color-stop(lime), color-stop(springgreen), color-stop(cyan), color-stop(#007fff), color-stop(blue), color-stop(#7f00ff), color-stop(magenta), to(#ff007f)) !important;
-  background-image: linear-gradient(to right, red, #ff7f00, yellow, chartreuse, lime, springgreen, cyan, #007fff, blue, #7f00ff, magenta, #ff007f, red, #ff7f00, yellow, chartreuse, lime, springgreen, cyan, #007fff, blue, #7f00ff, magenta, #ff007f, red, #ff7f00, yellow, chartreuse, lime, springgreen, cyan, #007fff, blue, #7f00ff, magenta, #ff007f) !important;
-  background-size: 1000%;
-  -webkit-animation: slide 8s infinite ease-in-out;
-          animation: slide 8s infinite ease-in-out;
-}
-
 @-webkit-keyframes gay {
   from {
     -webkit-filter: hue-rotate(0deg);
@@ -314,6 +335,10 @@ u {
   transition: transform 0.5s, -webkit-transform 0.5s !important;
 }
 
+[style*="/avatars/498615931388559362/"] {
+  background: url(https://i.imgur.com/zGRaYk2.png) 50% 50%/cover !important;
+}
+
 [style*="/avatars/311966851179479046/"] {
   background: url(https://cdn.discordapp.com/attachments/339760259738370049/557192623756935169/image0.jpg) 50% 50%/cover !important;
 }
@@ -369,5 +394,10 @@ u {
 #app-mount ::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-color-bright)), to(var(--hover-color-bright)));
   background-image: linear-gradient(to bottom, var(--main-color-bright), var(--hover-color-bright));
+}
+
+.nameSpeaking-3UhoEZ {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
 }
 /*# sourceMappingURL=Sorry.css.map */
