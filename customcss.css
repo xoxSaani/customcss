@@ -30,7 +30,7 @@ Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
 }
 
 #app-mount {
-  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2013/09/18/148667/5c3b967f3bc647d4e63dcc0dd903efdd.jpg);
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2013/09/18/148667/5c3b967f3bc647d4e63dcc0dd903efdd.jpg) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
