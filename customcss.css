@@ -84,6 +84,7 @@ u {
   background-size: 200% 200%;
   -webkit-filter: invert(1);
           filter: invert(1);
+    z-index: 3;
 }
 
 .theme-dark .username-_4ZSMR {
@@ -403,7 +404,7 @@ u {
   box-shadow: 0 0 4px 0 var(--main-color) !important;
 }
 
-#app-mount .chat-3bRxxu .containerCozy-jafyvG {
+#app-mount .inner-zqa7da {
   background: #000000cc !important;
   box-shadow: 0 0 4px 0 var(--main-color) !important;
   margin: 15px !important;
@@ -411,4 +412,8 @@ u {
   border-bottom-right-radius: 20px !important;
   border-bottom-width: 2.5px !important;
   transition: all 1s ease-in-out .3s !important;
+}
+
+#app-mount .input-1Rv96N{
+    font-size: 10px;
 }
