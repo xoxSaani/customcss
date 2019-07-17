@@ -69,6 +69,9 @@ u {
   border-bottom-right-radius: 20px !important;
   border-bottom-width: 2.5px !important;
   box-shadow: 1px 1px 4px currentColor !important;
+  padding: 3px 8px 0px 8px;
+  margin-bottom: 9px !important;
+  margin-top: 0px;
 }
 
 .messageCozy-2JPAPA .username-_4ZSMR::after {
@@ -92,6 +95,7 @@ u {
   border-top-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
   border-bottom-width: 2.5px !important;
+  padding: 2px 7px 2px 7px;
 }
 
 .theme-dark .username-_4ZSMR {
