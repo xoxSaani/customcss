@@ -84,7 +84,10 @@ u {
   background-size: 200% 200%;
   -webkit-filter: invert(1);
           filter: invert(1);
-    z-index: 3;
+  z-index: 3;
+  border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-width: 2.5px !important;
 }
 
 .theme-dark .username-_4ZSMR {
