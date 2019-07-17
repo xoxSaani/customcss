@@ -402,3 +402,13 @@ u {
   background: #00000066 !important;
   box-shadow: 0 0 4px 0 var(--main-color) !important;
 }
+
+#app-mount .chat-3bRxxu .containerCozy-jafyvG {
+  background: #000000cc !important;
+  box-shadow: 0 0 4px 0 var(--main-color) !important;
+  margin: 15px !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-width: 2.5px !important;
+  transition: all 1s ease-in-out .3s !important;
+}
