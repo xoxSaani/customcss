@@ -116,8 +116,7 @@ u {
   transition: all 1s ease-in-out 1s !important;
 }
 
-.markup-2BOw-j:hover:not(.jumboable), .wrapper-3WhCwL:hover, .mention:hover {
-  color: var(--hover-color) !important;
+.markup-2BOw-j:hover:not(.jumboable), .wrapper-3WhCwL:hover, .mention:hover{
   font-size: 17.5px !important;
   margin-top: -.5px !important;
   margin-bottom: -.5px !important;
@@ -218,7 +217,6 @@ u {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-width: 2.5px;
-  color: var(--hover-color) !important;
   padding-right: 10px !important;
   padding-left: 10px !important;
   padding-bottom: 3px !important;
@@ -389,4 +387,18 @@ u {
   -webkit-filter: brightness(200%);
           filter: brightness(200%);
 }
-/*# sourceMappingURL=Sorry.css.map */
+
+#app-mount .chat-3bRxxu .containerCozy-jafyvG {
+  background: #000000cc;
+  box-shadow: 0 0 4px 0 var(--main-color);
+  margin: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-width: 2.5px;
+  transition: all 1s ease-in-out .3s !important;
+}
+
+#app-mount .chat-3bRxxu .containerCozy-jafyvG:hover {
+  background: #00000066;
+  box-shadow: 0 0 4px 0 var(--main-color) !important;
+}
