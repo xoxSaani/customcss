@@ -68,7 +68,7 @@ u {
   border-top-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
   border-bottom-width: 2.5px !important;
-  box-shadow: 0 0 4px 0 currentColor !important;
+  box-shadow: 1px 1px 4px currentColor !important;
 }
 
 .messageCozy-2JPAPA .username-_4ZSMR::after {
