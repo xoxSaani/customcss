@@ -9,6 +9,7 @@ https://gist.github.com/satoru8/661377e6c073d2601ed4478c49399fc9
 This notice applies to all files within this repository even where not stated within the files.
 Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
 */
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css");
 @import url("https://satoru8.github.io/FullTransparency/FullTransparency.css");
 :root {
   --hover-color: #e649be;
@@ -26,7 +27,6 @@ Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
   --round: 25%;
   --speakColor: #b88fcf;
   --sc: #e649be;
-  --font: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif ;	/* Discord default font - Whitney,Helvetica Neue,Helvetica,Arial,sans-serif */
 }
 
 #app-mount {
@@ -34,6 +34,7 @@ Copyright © 2018-19, Satoru | All rights reserved | DO NOT DISTRIBUTE
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Fira Code', monospace !important;
 }
 
 strong {
@@ -111,8 +112,8 @@ u {
   color: var(--main-color) !important;
   margin-top: -1px !important;
   margin-bottom: -1px !important;
-  -webkit-transition: all 1s ease-in-out .3s !important;
-  transition: all 1s ease-in-out .3s !important;
+  -webkit-transition: all 1s ease-in-out 1s !important;
+  transition: all 1s ease-in-out 1s !important;
 }
 
 .markup-2BOw-j:hover:not(.jumboable), .wrapper-3WhCwL:hover, .mention:hover {
