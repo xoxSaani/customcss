@@ -78,7 +78,7 @@ u {
   -webkit-animation: isMentioned 2s infinite linear !important;
           animation: isMentioned 2s infinite linear !important;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.5;
   border-radius: 5px;
   z-index: -1;
   background-size: 200% 200%;
