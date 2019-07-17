@@ -65,6 +65,11 @@ u {
 .messageCozy-2JPAPA .username-_4ZSMR {
   position: relative;
   padding: 2px 6px 3px 6px;
+  border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-width: 2.5px !important;
+  box-shadow: 0 0 4px 0 currentColor !important;
+    filter: invert(1);
 }
 
 .messageCozy-2JPAPA .username-_4ZSMR::after {
